@@ -1,0 +1,42 @@
+﻿@model Crud.Models.City
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>City</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.City1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstContact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstContact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Missionaries)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Missionaries)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
